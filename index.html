@@ -2,6 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Creador de Sprites Megaman</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
@@ -48,6 +49,36 @@
         }
         #imageLayer {
             z-index: 1;
+        }
+
+        /* Estilos Responsive */
+        @media screen and (max-width: 768px) {
+            body {
+                flex-direction: column;
+            }
+            .w-1\/6, .w-1\/2, .w-1\/3 {
+                width: 100%;
+            }
+            .pixel-grid {
+                width: 100%;
+                height: auto;
+                max-width: 400px;
+                max-height: 400px;
+                margin: 0 auto;
+            }
+            .color-palette-item {
+                width: 20px;
+                height: 20px;
+            }
+            .flex {
+                flex-direction: column;
+            }
+            .bg-white {
+                padding: 10px;
+            }
+            .shadow-md {
+                box-shadow: none;
+            }
         }
     </style>
 </head>
